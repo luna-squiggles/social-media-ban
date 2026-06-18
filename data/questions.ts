@@ -62,13 +62,13 @@ const entries: { title: string; youtubeId: string }[] = [
   {
     title:
       "Will this make a measurable difference to anxiety, depression, and body image issues, and how long before we'll see these results in young people's wellbeing?",
-    youtubeId: "fuXzhMEe5uA",
+    youtubeId: "udiQMYxLdIY",
   },
-  { title: "Is this a slippery slope to surveillance?", youtubeId: "YESa8Ysonj8" },
-  { title: "How can personal data be kept safe?", youtubeId: "ybExN7xVyHI" },
+  { title: "Is this a slippery slope to surveillance?", youtubeId: "m3meL9JYTh0" },
+  { title: "How can personal data be kept safe?", youtubeId: "Zyge2fnzJ9I" },
   {
     title: "What does success look like in five years' time?",
-    youtubeId: "9yPKf348Lfw",
+    youtubeId: "8JEaSSUCM4E",
   },
 ];
 
