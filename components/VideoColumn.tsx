@@ -20,7 +20,7 @@ export function VideoColumn({
     direction === "up" ? "animate-scroll-up" : "animate-scroll-down";
 
   return (
-    <div className={`relative h-full overflow-hidden ${className}`}>
+    <div className={`relative h-full min-w-0 flex-1 overflow-hidden ${className}`}>
       <div
         className={`flex flex-col gap-[var(--tile-gap)] will-change-transform ${animationClass}`}
         style={{

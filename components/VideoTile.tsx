@@ -23,7 +23,7 @@ export function VideoTile({ question }: VideoTileProps) {
       type="button"
       onClick={() => open(question.youtubeId, question.title)}
       aria-label={`Watch: ${question.title}`}
-      className="group relative block aspect-[4/5] h-[var(--tile-height)] w-[calc(var(--tile-height)*0.8)] shrink-0 overflow-hidden rounded-2xl bg-black text-left transition-transform duration-300 hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+      className="group relative block aspect-[4/5] w-full shrink-0 overflow-hidden rounded-2xl bg-black text-left transition-transform duration-300 hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
     >
       <video
         ref={videoRef}
