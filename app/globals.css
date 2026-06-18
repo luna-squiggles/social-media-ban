@@ -1,26 +1,76 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f8f7ff;
   --foreground: #171717;
+  --accent-gold: #dda448;
+  --accent-red: #bb342f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-serif: var(--font-playfair);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-video-grid {
+  --tile-height: clamp(8rem, 30vh, 19rem);
+  --tile-gap: 1rem;
+  --column-gap: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-video-grid {
+    --tile-height: clamp(10.5rem, 38vh, 19rem);
+    --tile-gap: 1.25rem;
+    --column-gap: 1.75rem;
+  }
+}
+
+@keyframes scroll-up {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-down {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up linear infinite;
+}
+
+.animate-scroll-down {
+  animation: scroll-down linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll-up,
+  .animate-scroll-down {
+    animation: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .animate-scroll-up,
+  .animate-scroll-down {
+    animation-duration: 140s !important;
+  }
 }
